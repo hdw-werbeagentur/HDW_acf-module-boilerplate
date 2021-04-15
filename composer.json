@@ -16,6 +16,5 @@
           "homepage": "https://www.tobias-feld.de"
         }
     ],
-    "minimum-stability": "dev",
     "require": {}
 }
