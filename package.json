@@ -1,8 +1,10 @@
 {
   "name": "acf-module-boilerplate",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "ACF Module boilerplate for the monkey theme",
   "scripts": {
+    "process-rename": "rename",
+    "process-replace": "rexreplace",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,5 +23,9 @@
   "bugs": {
     "url": "https://github.com/Talented-Monkeys/monkey-theme-acf-module-boilerplate/issues"
   },
-  "homepage": "https://github.com/Talented-Monkeys/monkey-theme-acf-module-boilerplate#readme"
+  "homepage": "https://github.com/Talented-Monkeys/monkey-theme-acf-module-boilerplate#readme",
+  "devDependencies": {
+    "rename-cli": "^6.2.1",
+    "rexreplace": "^6.1.1"
+  }
 }

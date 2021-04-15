@@ -16,5 +16,26 @@
           "homepage": "https://www.tobias-feld.de"
         }
     ],
-    "require": {}
+    "require": {},
+    "scripts": {
+      "post-create-project-cmd": [
+        "npm i",
+        "MODULE=$(basename $PWD); mv example.js ${MODULE}.js;",
+        "MODULE=$(basename $PWD); mv example.scss ${MODULE}.scss;",
+        "MODULE=$(basename $PWD); mv example.config.php ${MODULE}.config.php;",
+        "MODULE=$(basename $PWD); mv example.controller.php ${MODULE}.controller.php;",
+        "MODULE=$(basename $PWD); mv example.model.php ${MODULE}.model.php;",
+        "MODULE=$(basename $PWD); mv example.view.php ${MODULE}.view.php;",
+        "MODULE=$(basename $PWD); echo ${MODULE} > .module-name",
+        "MODULE=$(basename $PWD); echo ${MODULE} > .module_name",
+        "npm run process-replace \"-\" \"_\" .module_name",
+        "MODULE=$(head -n 1 .module_name); npm run process-replace \"example_\" \"${MODULE}\" *.{php,js,scss};",
+        "MODULE=$(basename $PWD); npm run process-replace \"example\" \"${MODULE}\" *.{php,js,scss} *.php;",
+        "MODULE=$(read -p 'What should be the title of the module?: ' MODULETITLE && echo $MODULETITLE); npm run process-replace \"REPLACE_TITLE\" \"${MODULE}\" *.{php,js,scss};",
+        "MODULE=$(read -p 'What should be the description of the module?: ' MODULETITLE && echo $MODULETITLE); npm run process-replace \"REPLACE_DESCRIPTION\" \"${MODULE}\" *.{php,js,scss};",
+        "MODULE=$(cd ../../.. && basename $PWD); npm run process-replace \"TEXTDOMAIN\" \"${MODULE}\" *.{php,js,scss};",
+        "rm -rf .module-name",
+        "rm -rf .module_name"
+      ]
+    }
 }

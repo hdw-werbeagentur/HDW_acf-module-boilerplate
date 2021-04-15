@@ -1,2 +1,4 @@
 /vendor/
 /node_modules/
+.module-name
+.module_name
