@@ -1,0 +1,26 @@
+{
+  "name": "acf-module-boilerplate",
+  "description": "ACF Module boilerplate for the monkey theme",
+  "main": "example.config.php",
+  "authors": [
+    "Anthony Spross <anthony@talented-monkeys.com",
+    "Tobias Feld <tobias@talented-monkeys.com"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "monkey-theme",
+    "acf",
+    "wordpress",
+    "module",
+    "boilerplate"
+  ],
+  "homepage": "https://github.com/Talented-Monkeys/monkey-theme-acf-module-boilerplate",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

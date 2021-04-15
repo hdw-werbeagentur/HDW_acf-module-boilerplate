@@ -1,0 +1,21 @@
+{
+    "name": "monkey-theme/acf-module-boilerplate",
+    "description": "ACF Module boilerplate for the monkey theme",
+    "type": "module",
+    "version": "0.0.1",
+    "license": "MIT",
+    "authors": [
+        {
+          "name": "Anthony Spross",
+          "email": "anthony@talented-monkeys.com",
+          "homepage": "https://www.anthony-spross.de"
+        },
+        {
+          "name": "Tobias Feld",
+          "email": "tobias@talented-monkeys.com",
+          "homepage": "https://www.tobias-feld.de"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

@@ -1,0 +1,26 @@
+@import "../../scss/0-settings/_variables.scss";
+@import "../../scss/0-settings/custom-media-queries.scss";
+@import "../../scss/0-settings/functions.scss";
+@import "../../scss/1-tools/*.scss";
+
+.example-module{
+
+    &__inner-container{
+    }
+
+    @media (--mobile){
+
+    }
+
+    @media (--tablet){
+
+    }
+
+    @media (--desktop){
+
+    }
+
+    @media (--wide){
+
+    }
+}
