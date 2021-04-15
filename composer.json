@@ -2,7 +2,7 @@
     "name": "monkey-theme/acf-module-boilerplate",
     "description": "ACF Module boilerplate for the monkey theme",
     "type": "module",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "license": "MIT",
     "authors": [
         {
@@ -29,7 +29,7 @@
         "MODULE=$(basename $PWD); echo ${MODULE} > .module-name",
         "MODULE=$(basename $PWD); echo ${MODULE} > .module_name",
         "npm run process-replace \"-\" \"_\" .module_name",
-        "MODULE=$(head -n 1 .module_name); npm run process-replace \"example_\" \"${MODULE}\" *.{php,js,scss};",
+        "MODULE=$(head -n 1 .module_name); npm run process-replace \"example_\" \"${MODULE}_\" *.{php,js,scss};",
         "MODULE=$(basename $PWD); npm run process-replace \"example\" \"${MODULE}\" *.{php,js,scss} *.php;",
         "MODULE=$(read -p 'What should be the title of the module?: ' MODULETITLE && echo $MODULETITLE); npm run process-replace \"REPLACE_TITLE\" \"${MODULE}\" *.{php,js,scss};",
         "MODULE=$(read -p 'What should be the description of the module?: ' MODULETITLE && echo $MODULETITLE); npm run process-replace \"REPLACE_DESCRIPTION\" \"${MODULE}\" *.{php,js,scss};",
