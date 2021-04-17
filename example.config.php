@@ -23,7 +23,7 @@ function example_init() {
 				'jsx' => true
             ),
             'render_template'   => $viewFile,
-            //'enqueue_script'    => $assetsDistPath . '/js/' . $assetsFilePath . '.min.js',
+            'enqueue_script'    => $assetsDistPath . '/js/' . $assetsFilePath . '.min.js',
             'enqueue_style'     => $assetsDistPath . '/css/' . $assetsFilePath . '.min.css',
             'controller_file'   => $controllerFile,
             'model_file'   => $modelFile,
