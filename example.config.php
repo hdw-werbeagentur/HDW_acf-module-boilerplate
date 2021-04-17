@@ -13,8 +13,8 @@ function example_init() {
             'title'             => __('REPLACE_TITLE', 'TEXTDOMAIN'),
             'description'       => __('REPLACE_DESCRIPTION', 'TEXTDOMAIN'),
             'render_callback'   => 'example_block_render_callback',
-            'category'          => 'formatting',
-            'icon'              => 'icon',
+            'category'          => 'REPLACE_CATEGORY',
+            'icon'              => 'REPLACE_ICON',
             'keywords'          => array($moduleName, __('REPLACE_TITLE', 'TEXTDOMAIN')),
             'align'             => 'full',
             'supports'          => array(

@@ -31,8 +31,10 @@
         "npm run process-replace \"-\" \"_\" .module_name",
         "MODULE=$(head -n 1 .module_name); npm run process-replace \"example_\" \"${MODULE}_\" *.{php,js,scss};",
         "MODULE=$(basename $PWD); npm run process-replace \"example\" \"${MODULE}\" *.{php,js,scss} *.php;",
-        "MODULE=$(read -p 'What should be the title of the module?: ' MODULETITLE && echo $MODULETITLE); npm run process-replace \"REPLACE_TITLE\" \"${MODULE}\" *.{php,js,scss};",
-        "MODULE=$(read -p 'What should be the description of the module?: ' MODULETITLE && echo $MODULETITLE); npm run process-replace \"REPLACE_DESCRIPTION\" \"${MODULE}\" *.{php,js,scss};",
+        "TITLE=$(read -p 'What should be the title of the module?: ' MODULETITLE && echo $MODULETITLE); npm run process-replace \"REPLACE_TITLE\" \"${TITLE}\" *.{php,js,scss};",
+        "DESCRIPTION=$(read -p 'What should be the description of the module?: ' MODULEDESCRIPTION && echo $MODULEDESCRIPTION); npm run process-replace \"REPLACE_DESCRIPTION\" \"${DESCRIPTION}\" *.{php,js,scss};",
+        "ICON=$(read -p 'What should be the icon for this module?: ' MODULEICON && echo $MODULEICON); npm run process-replace \"REPLACE_ICON\" \"${ICON}\" *.{php,js,scss};",
+        "CATEGORY=$(read -p 'What should be the category for this module?: ' MODULECATEGORY && echo $MODULECATEGORY); npm run process-replace \"REPLACE_CATEGORY\" \"${CATEGORY}\" *.{php,js,scss};",
         "MODULE=$(cd ../../.. && basename $PWD); npm run process-replace \"TEXTDOMAIN\" \"${MODULE}\" *.{php,js,scss};",
         "rm -rf .module-name",
         "rm -rf .module_name"
