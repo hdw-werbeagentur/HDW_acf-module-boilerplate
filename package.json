@@ -1,7 +1,7 @@
 {
-  "name": "acf-module-boilerplate",
-  "version": "0.0.4",
-  "description": "ACF Module boilerplate for the monkey theme",
+  "name": "hdw-acf-module-boilerplate",
+  "version": "0.0.1",
+  "description": "ACF Module boilerplate for the hdw theme",
   "scripts": {
     "process-rename": "rename",
     "process-replace": "rexreplace",
@@ -9,21 +9,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Talented-Monkeys/monkey-theme-acf-module-boilerplate.git"
+    "url": "git+https://github.com/hdw-werbeagentur/HDW_acf-module-boilerplate.git"
   },
   "keywords": [
-    "monkey-theme",
+    "hdw-theme",
     "acf",
     "wordpress",
     "module",
     "boilerplate"
   ],
-  "author": "Anthony Spross <anthony@talented-monkeys.com, Tobias Feld <tobias@talented-monkeys.com",
+  "author": "Anthony Spross <a.spross@hdw1.de, Tobias Feld <t.feld@hdw1.de",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Talented-Monkeys/monkey-theme-acf-module-boilerplate/issues"
+    "url": "https://github.com/hdw-werbeagentur/HDW_acf-module-boilerplate/issues"
   },
-  "homepage": "https://github.com/Talented-Monkeys/monkey-theme-acf-module-boilerplate#readme",
+  "homepage": "https://github.com/hdw-werbeagentur/HDW_acf-module-boilerplate#readme",
   "devDependencies": {
     "rename-cli": "^6.2.1",
     "rexreplace": "^6.1.1"
