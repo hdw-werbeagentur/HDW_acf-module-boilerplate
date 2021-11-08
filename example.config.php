@@ -1,4 +1,6 @@
 <?php
+use \RalfHortt\ImageSizes\ImageSize;
+
 function example_init() {
     $moduleName = 'example';
     $assetsDistPath = get_template_directory_uri() . '/dist';
