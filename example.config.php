@@ -8,6 +8,11 @@ function example_init() {
     $viewFile = get_template_directory() . '/resources/modules/' . $moduleName . '/' . $moduleName . '.view.php';
     $controllerFile = get_template_directory() . '/resources/modules/' . $moduleName . '/' . $moduleName . '.controller.php';
     $modelFile = get_template_directory() . '/resources/modules/' . $moduleName . '/' . $moduleName . '.model.php';
+	
+    /**
+     * Add here your module specific images sizes 
+     * Example: (new ImageSize('name', __('Label', 'TEXTDOMAIN'), 50, 50, true))->register();
+     */
 
     if (function_exists('acf_register_block')) {
         acf_register_block(array(
