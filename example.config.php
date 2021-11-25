@@ -21,7 +21,7 @@ function example_init() {
             'align'             => 'full',
             'supports'          => array(
                 'multiple' => true,
-				'mode' => false,
+				'mode' => true,
 				'jsx' => true
             ),
             'render_template'   => $viewFile,
