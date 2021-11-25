@@ -50,7 +50,7 @@ add_action('acf/init', 'example_init');
 // Save
 function example_acf_json_saving($group) {
     // list of field groups that should be saved to my-plugin/acf-json
-    $groups = ""; //array('group_605ddb2646ffd');
+    $groups = array(); //array('group_605ddb2646ffd');
 
     if (in_array($group['key'], $groups)) {
         add_filter('acf/settings/save_json', function() {
