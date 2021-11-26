@@ -10,8 +10,8 @@ function example_init() {
     $modelFile = get_template_directory() . '/resources/modules/' . $moduleName . '/' . $moduleName . '.model.php';
 	
     /**
-     * Add here your module specific images sizes 
-     * Example: (new ImageSize('name', __('Label', 'TEXTDOMAIN'), 50, 50, true))->register();
+     * Add here your module specific image sizes 
+     * Ex: (new ImageSize('name', __('Label', 'TEXTDOMAIN'), 50, 50, true))->register();
      */
 
     if (function_exists('acf_register_block')) {
