@@ -40,8 +40,8 @@ function example_init() {
 
 function example_block_render_callback($block) {
     if (file_exists($block['render_template'])) {
+	require($block['model_file']);
         require_once($block['controller_file']);
-        require($block['model_file']);
         require($block['render_template']);
     }
 }
