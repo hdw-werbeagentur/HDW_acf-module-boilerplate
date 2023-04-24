@@ -26,8 +26,9 @@ function example_init() {
             'align'             => 'full',
             'supports'          => array(
                 'multiple' => true,
-				'mode' => true,
-				'jsx' => true
+		'mode' => true,
+		'jsx' => true,
+		'anchor' => true
             ),
             'render_template'   => $viewFile,
             'enqueue_script'    => $assetsDistPath . '/js/' . $assetsFilePath . '.min.js',
